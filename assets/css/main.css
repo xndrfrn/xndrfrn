@@ -1106,6 +1106,7 @@ input, select, textarea {
 		width: calc(100% - 22.5em);
 		height: 100%;
 		left: 0;
+		background-color: #fff;
 	}
 
 		#viewer .inner {
@@ -1349,3 +1350,10 @@ input, select, textarea {
 				}
 
 		}
+
+/* Invert UI controls to black on the white background */
+#viewer .inner .toggle,
+#viewer .inner .nav-next,
+#viewer .inner .nav-previous {
+	filter: invert(1);
+}
